@@ -93,13 +93,14 @@ $(function() {
         asNavFor: '.slider-education-pic'
 });	   
 	$('.progress-bar-text').addClass('progress-bar-text-display');
-	//typed.js 
+	
+});
+//typed.js 
 	$(function(){
 	$("#typed").typed({stringsElement: $('#typed-strings'),
         typeSpeed: 80      
       });
 });
-});	  
 window.addEventListener('scroll', function(){
   var place = document.body.scrollTop;
   var animateOn = document.getElementById('animate-progress-bar').offsetTop;
