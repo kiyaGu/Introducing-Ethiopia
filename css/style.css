@@ -588,6 +588,7 @@ button.btn:focus{
 }
 hr{
 	margin-bottom: 30px !important;
+	border-color: #fec951 !important;
 }
 .text-success{
 	color: #fec951 !important;
@@ -631,7 +632,7 @@ hr{
 	padding-bottom: 5px !important;	
 }
 #introduction{	
-	padding-top: 90px;	
+	padding-top: 150px;	
 }
 #profile-pic{
 	margin-top: 35px;
@@ -710,6 +711,12 @@ hr{
 #download-resume button{
 	color:  #34324b !important;
 }
+.about-me-section{
+	padding-top: 150px !important;
+}
+#about-me-intro{
+	padding-top: 20px !important;
+}
 /* === resume section layout === */
 .resume-section{
 	background: url(https://res.cloudinary.com/fcc-project/image/upload/v1478954038/code-938776_xtcaps.jpg) 50% 0 repeat fixed; 
@@ -739,38 +746,53 @@ hr{
         margin: 40px auto;
     }
 .slick-slide {
-      margin: 0px 20px;
+      margin: 10px 20px;
 	}
 .slick-prev:before,
 .slick-next:before {
-        color: #fec951 !important;
+ 	color: #fec951 !important;
+		
 }
-.slide-item img{
+
+.slick-next:before {
+ 
+	margin-right: -10px;	
+}
+.slick-prev:before {
+
+	margin-left: -10px;
+	
+}
+.slider-education-pic{
 	height: 300px;
 }
 .slick-dots li button:before{
 	color: #fec951 !important;
 	font-size: 10px;
-	margin-top: 10px;
+	margin-top: 20px !important;
 }
 .slick-arrows{
-	background-color: #fec951 !important;	
+	background-color: #fec951 !important;
+	
 }
 /*education*/
 .slider-education-pic, .slider-education-pic img{
-	height: 200px;
-	background-size: cover;
+	height: 300px;
+	width: 100%;
 }
 .slider-education-content{
 	height: 100px;
-  margin-bottom: 0px;
+  	margin-bottom: 0px;
 }
 #micro-pic{
-	height: 250px !important;
+	height: 300px !important;
 }
 /*portfolio*/
+.portfolio-section{
+	padding-top: 50px;
+}
 .slider-portfolio-pic{
-	height: 250px !important;
+	height: 350px !important;
 	margin: 5px auto;
   	width:100%;
 }
@@ -783,15 +805,18 @@ hr{
 }
 .slider-portfolio-pic img{
 	width: 100%;
-	height: 300px;
+	height: 350px;
 }
 .slider-portfolio-nav, .slider-portfolio-nav img{
-	height: 100px ;
-	width: 80%;
+	height: 50px ;
+	width: 100%;
 	background-size: cover;
 }
-.slider-for img{
- margin: 0 auto;
+.slider-portfolio-nav{
+	width: 100%;
+}
+button.slick-next.slick-arrow,button.slick-prev.slick-arrow  {
+	margin-top: 10px !important;
 }
 /*====================end of slick===============*/
 /* === skills === */
@@ -803,10 +828,7 @@ hr{
 	height: 25px !important;
 	margin: 35px auto;	
 }
-.progress-bar-text-display{
-	display: none !important;
-	
-}
+
 .progress-bar-text{
 	line-height: 2 !important;
 }
@@ -820,7 +842,7 @@ hr{
 #timeline ul:after {
     content: " ";
     width: 1px;
-    background: 1px #d9dee9;
+    background: 1px #fec951;
     height: 90%;
     position: absolute;
     top: 3em;
@@ -937,7 +959,8 @@ hr{
 }
 /* === portfolio section layout === */
 .portfolio-section{
-	background: url(https://res.cloudinary.com/fcc-project/image/upload/v1478880770/monitor-933392_1920_zvdisa.jpg) 50% 0 
+/*	background: url(https://res.cloudinary.com/fcc-project/image/upload/v1478880770/monitor-933392_1920_zvdisa.jpg) 50% 0 */
+	background: url(https://res.cloudinary.com/fcc-project/image/upload/v1479158857/desktop_pz6elp.jpg) 50% 0
     repeat fixed;
 	background-size: cover;
  	margin: 0 auto; 
@@ -945,18 +968,24 @@ hr{
   	max-width: 1920px; 
   	position: relative; 
 }
+.portfolio-section div.container {
+	opacity: 0.95;
+	margin-top: 40px;
+}
 .portfolio-section h2{
-  margin-bottom:5px;
+  margin-bottom:30px;
 }
 /* === contact-me/footer section layout === */
 .contact-me-section{
 	background: url(https://res.cloudinary.com/fcc-project/image/upload/v1478954053/at-64056_fyocbs.jpg) 50% 0 repeat fixed; min-height: 720px; 
-	background-size: cover;
-	 
+	background-size: cover;	 
  	margin: 0 auto; 
   	width: 100%; 
   	max-width: 1920px; 
   	position: relative;
+}
+.contact-me-section{
+	padding-top: 50px;
 }
 #send-button{
 	color:  #34324b !important;
@@ -1035,16 +1064,27 @@ hr{
 	margin-top: 10px !important;
 }	
 */
-/* === about-me section layout === 
-#about-me{
-	padding-bottom: 110px;
+/* === about-me section layout === */
+/*
+.about-me-section{
+	padding-top: 50px !important;
 }	
 	
 #download-resume{
 	padding-top: 10px;
 }	
+*/
 	
 /* === resume section layout === */
+.slick-next:before {
+ 
+	margin-right: 0px;	
+}
+.slick-prev:before {
+
+	margin-left: 0px;
+	
+}
 .slide-item img{
 	height: 200px;	
 }
@@ -1088,9 +1128,7 @@ section{
 section div.container{
     padding:10px 0;
   }
-#intro-name{
-	height: 50%;	
-}
+
 #home div.container{
  	margin-top: 0 !important;
     padding-top: 10px !important;	
@@ -1103,21 +1141,19 @@ h2{
     margin: 10px 10px 15px 0;
     font-size: 16px;
 }
-#home{
-	height: auto !important;
-}
+
 .home-section{
 	margin-bottom: 0px;		
 }
 #profile-pic{
 	margin-top: 5px !important;
 	padding-right: 5px;
-	margin-bottom: 5px !important;
+	margin-bottom: 50px !important;
 }
 #profile-pic img{
 	border-radius: 50%;
-	height: 90px;
-	width: 40%;
+	height: 150px;
+	width: 50%;
 	padding:0;		
 }
 #typed strong{
@@ -1133,11 +1169,20 @@ hr{
 .badge.social{
     margin-bottom:5px;
 }
-.slide-item{
-	margin: 10px 0;
-  }
-.slide-item img{
-	height: 150px !important;	
+.about-me-section{
+	padding-top: 65px !important;
+}
+#about-me-intro{
+	padding-top: 0px !important;
+}
+.slick-next:before {
+ 
+	margin-right: 0px;	
+}
+.slick-prev:before {
+
+	margin-left: 0px;
+	
 }
 .slick-slide {
       margin: 0px 5px;
@@ -1145,9 +1190,12 @@ hr{
 #micro-pic{
 	height: 150px !important;
 }
+.portfolio-section h2{
+  margin-bottom:5px;
+}
 .slider-portfolio-pic{
-	height: 100%;
-	margin: 10px 0 10px 10px;  
+	height: 300px !important;
+	margin: 10px 0px;  
 }
 .slider-portfolio-nav{
     width:93% !important;
@@ -1161,12 +1209,12 @@ hr{
 	height: 60px !important;	
 }
 .slider-portfolio-nav img{
-	width: 80%;
+	width: 100%;
 	height: 60px !important;   
 }
 .slider-portfolio-pic img{
 	width: 100%;
-	height: 250px !important;
+	height: 300px !important;
 }
 .slider-education-pic{
 	height: 100%;
@@ -1178,8 +1226,8 @@ hr{
 	height: 100%;
 }
 .slider-education-content{
-	height: 100px !important;
-	margin-top:0px;
+	height: 140px !important;
+	margin-top:10px;
 }
 .progress{
 	height: 20px !important;	
@@ -1208,6 +1256,10 @@ hr{
 }
 .education {
 	padding: 5px 0;
+}
+.portfolio-section div.container {
+	
+	margin-top: 0px;
 }
 .slider-portfolio-content{	
   	height: 120px;
@@ -1285,7 +1337,11 @@ hr{
 	position: relative;
 	margin: 1em 0 2em 0;
 	color: #34324b; 
-	} 	
+	}
+.contact-me-section{
+	padding-top: 20px;
+}
+
 	
 }
 

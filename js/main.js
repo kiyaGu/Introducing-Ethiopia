@@ -11,7 +11,27 @@ $(function() {
         speed: 500,
         arrows: false,
         fade: true,
-        asNavFor: '.slider-portfolio-nav'
+        asNavFor: '.slider-portfolio-nav',
+		responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
 	});
 	$('.slider-portfolio-content').slick({
         slidesToShow: 1,
@@ -168,5 +188,7 @@ $(function() {
 }(window.jQuery, window, document));
   // The global jQuery object is passed as a parameter
  $(".home-section").css("height",$(window).height());
-$("#intro-name").css("height",$(window).height()-120+"px");
+ $(".about-me-section").css("height",$(window).height());
+$(".portfolio-section").css("height",$(window).height());
+$("#intro-name").css("height",$(window).height()-130+"px");
 $("#container-row").css("paddingTop",($(window).height()/2)-70+"px"); 
