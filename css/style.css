@@ -563,9 +563,17 @@ button.btn:focus{
 	border: 1px solid #fec951;
 	position: relative;
 }
-.badge.social{
-	right: px !important;
+.badge.social.facebook{
+	right: 25px !important;
 }
+.badge.social.gplus{
+	right: 12px !important;
+}
+
+.badge.social.twitter{
+	left: 12px !important;
+}
+
 .badge.social.twitter:hover{
     background: #55acee;
 }
