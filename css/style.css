@@ -619,7 +619,7 @@ hr{
 .home-section{
 	background: url(https://res.cloudinary.com/fcc-project/image/upload/v1478880770/monitor-933392_1920_zvdisa.jpg) 50% 0 repeat fixed; 
 	background-size: cover;
-	height: 620px; 
+/*	height: 620px; */
  	margin: 0 auto; 
   	width: 100%; 
   	max-width: 1920px; 
@@ -634,10 +634,11 @@ hr{
 #introduction{	
 	padding-top: 150px;	
 }
+
 #profile-pic{
 	margin-top: 35px;
 	padding-right: 5px;
-	margin-bottom: 230px !important;
+	margin-bottom: 330px !important; /* very essential for manging the move down button position*/
 }
 #profile-pic img{
 	border-radius: 50%;
@@ -1052,7 +1053,7 @@ hr{
 }
 
 #intro-name{	
-/*	box-sizing: border-box;*/
+	box-sizing: border-box;
 }
 
 #typed strong{
@@ -1133,6 +1134,9 @@ section div.container{
  	margin-top: 0 !important;
     padding-top: 10px !important;	
 }
+.home-section{
+		padding-bottom: 10px !important;
+	}
 #personal-info h3{
     margin: 10px 0 15px 0 !important;
     color:#fec951;
@@ -1246,7 +1250,7 @@ hr{
 }
 #about-me{
 	padding-bottom: 0px;
-  	text-align: left;
+  	
 }
 .row{
 	margin: 0 !important;
@@ -1274,14 +1278,17 @@ hr{
  #portfolio-text-content p strong{
     color:#fec951;
  }
+/*
 .about-me-section{
 	height: auto ;
 }
+*/
 #portfolio.portfolio-section{
 	padding-bottom: 10px !important;		
 }
 .hire-me{
 	margin-top: 10px !important;
+	margin-bottom: 170px !important;
 }
 #intro-break{
     display:none !important;
@@ -1344,9 +1351,7 @@ hr{
 .contact-me-section{
 	padding-top: 20px;
 }
-.home-section{
-		padding-bottom: 10px !important;
-	}
+
 }
 
 

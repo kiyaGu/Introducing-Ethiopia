@@ -3,11 +3,11 @@
 (function($, window, document) {
 // The $ is now locally scoped 
 // Listen for the jQuery ready event on the document
-	
+	$("#intro-name").css("height",$(window).height()-130+"px");
   $(".home-section").css("height",$(window).height());
  $(".about-me-section").css("height",$(window).height());
 //$(".portfolio-section").css("height",$(window).height());
-$("#intro-name").css("height",$(window).height()-130+"px");
+
 //$("#container-row").css("paddingTop",($(window).height()/2)-70+"px"); 
 $(function() {
 		// The DOM is ready!
