@@ -186,6 +186,12 @@ $(function() {
     });
 });
 	
+
+	
+	
+}(window.jQuery, window, document));
+  // The global jQuery object is passed as a parameter
+
 if ( $(window).height() > 568) {      
   $(".home-section").css("height",$(window).height());
  $(".about-me-section").css("height",$(window).height());
@@ -198,10 +204,4 @@ else {
 	$("#intro-name").css("height",$(window).height()-130+"px");
    
 }
-	
-	
-}(window.jQuery, window, document));
-  // The global jQuery object is passed as a parameter
-
-
  
