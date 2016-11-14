@@ -619,7 +619,7 @@ hr{
 .home-section{
 	background: url(https://res.cloudinary.com/fcc-project/image/upload/v1478880770/monitor-933392_1920_zvdisa.jpg) 50% 0 repeat fixed; 
 	background-size: cover;
-	height: 620px; 
+/*	height: 620px; */
  	margin: 0 auto; 
   	width: 100%; 
   	max-width: 1920px; 
@@ -699,7 +699,7 @@ hr{
 .about-me-section{
 	background: url(https://res.cloudinary.com/fcc-project/image/upload/v1478954046/laptop-926775_ue3mi0.jpg) 50% 0 repeat fixed; 
 	background-size: cover;	
-  	height: 620px; 
+/*  	height: 620px; */
  	margin: 0 auto; 
   	width: 100%; 
   	max-width: 1920px; 
