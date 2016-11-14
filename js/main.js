@@ -194,7 +194,7 @@ $("#intro-name").css("height",$(window).height()-130+"px");
 //$("#container-row").css("paddingTop",($(window).height()/2)-70+"px"); 
 } 
 else {
-   $(".home-section").css("height",500+"px");
+   $(".home-section").css("height",$(window).height());
    $(".about-me-section").css("height",620+"px"); 
 }
 	
