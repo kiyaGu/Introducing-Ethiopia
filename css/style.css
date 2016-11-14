@@ -561,6 +561,10 @@ button.btn:focus{
     border-radius:50px;
     color:  #d9dee9;
 	border: 1px solid #fec951;
+	position: relative;
+}
+.badge.social{
+	right: px !important;
 }
 .badge.social.twitter:hover{
     background: #55acee;
