@@ -1042,7 +1042,7 @@ hr{
 #profile-pic{
 	margin-top: 25px !important;
 	padding-right: 5px;
-	margin-bottom: 10px;
+	margin-bottom: 10px !important;
 }
 #profile-pic img{
 	border-radius: 50%;
@@ -1148,7 +1148,7 @@ h2{
 #profile-pic{
 	margin-top: 5px !important;
 	padding-right: 5px;
-	margin-bottom: 50px !important;
+	margin-bottom: 20px !important;
 }
 #profile-pic img{
 	border-radius: 50%;
