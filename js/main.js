@@ -165,6 +165,7 @@ $(function() {
         event.preventDefault();
     });
 });
+	
+	 $("#intro-name").css("height",$(window).height());
 }(window.jQuery, window, document));
   // The global jQuery object is passed as a parameter
- $("#intro-name").css("height",$(window).height());
