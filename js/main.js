@@ -185,9 +185,7 @@ $(function() {
         event.preventDefault();
     });
 });
-}(window.jQuery, window, document));
-  // The global jQuery object is passed as a parameter
-
+	
 if ( $(window).height() > 568) {      
   $(".home-section").css("height",$(window).height());
  $(".about-me-section").css("height",$(window).height());
@@ -196,7 +194,13 @@ $("#intro-name").css("height",$(window).height()-130+"px");
 //$("#container-row").css("paddingTop",($(window).height()/2)-70+"px"); 
 } 
 else {
-   $(".home-section").css("height",620+"px");
- $(".about-me-section").css("height",620+"px"); 
+   $(".home-section").css("height",600+"px");
+   $(".about-me-section").css("height",620+"px"); 
 }
+	
+	
+}(window.jQuery, window, document));
+  // The global jQuery object is passed as a parameter
+
+
  
