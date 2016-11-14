@@ -552,17 +552,16 @@ button.btn:focus{
     width: 40px;
     text-align: center;
     line-height: 42px;
-    margin: 0 5px 20px 0;
-    padding-top: 0px;/*codepen*/
+    margin: 0 5px 0px 0;
+    padding-top: 10px !important;/*codepen*/
     -webkit-border-radius:50px;
-    -moz-border-radius:50px ;
-    -ms-border-radius:50px ;
-    -o-border-radius:50px ;
+    -moz-border-radius:50px;
+    -ms-border-radius:50px;
+    -o-border-radius:50px;
     border-radius:50px;
     color:  #d9dee9;
 	border: 1px solid #fec951;
 }
-
 .badge.social.twitter:hover{
     background: #55acee;
 }
