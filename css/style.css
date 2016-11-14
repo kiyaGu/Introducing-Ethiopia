@@ -1003,7 +1003,7 @@ footer{
   	background: url("https://res.cloudinary.com/fcc-project/image/upload/v1478954038/code-938776_xtcaps.jpg") no-repeat !important;
 	background-size: cover;
     color:#fec85d;
-    padding:20px 0 10px;
+    padding:20px 0 10px 10px;
     font-size: 12px;
 }
 footer p{
@@ -1123,7 +1123,7 @@ hr{
 
 @media screen and (max-width:568px){
 section{
-	padding:10px 20px 0 10px;
+	padding:10px 10px 30px 10px;
 }
 section div.container{
     padding:10px 0;
@@ -1142,9 +1142,11 @@ h2{
     font-size: 16px;
 }
 
+/*
 .home-section{
 	margin-bottom: 0px;		
 }
+*/
 #profile-pic{
 	margin-top: 5px !important;
 	padding-right: 5px;
@@ -1170,8 +1172,9 @@ hr{
     margin-bottom:5px;
 }
 .about-me-section{
-	padding-top: 65px !important;
+	padding: 65px 10px 20px 10px !important;
 }
+	
 #about-me-intro{
 	padding-top: 0px !important;
 }
@@ -1341,7 +1344,9 @@ hr{
 .contact-me-section{
 	padding-top: 20px;
 }
-	
+.home-section{
+		padding-bottom: 10px !important;
+	}
 }
 
 
