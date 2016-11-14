@@ -655,6 +655,9 @@ hr{
     50% { opacity:0; }
     100% { opacity:1; }
 }
+#typed{
+	margin-bottom: 50px !important;
+}
 #typed strong{
 		font-weight:800;
 		font-size: 54px;	  
@@ -670,7 +673,7 @@ hr{
 	color: black !important;
 }
 #move-down{
-	margin-top: 20px;
+	padding-top: 120px !important;
 }
 #move-down button{
 	border-radius:80%;
