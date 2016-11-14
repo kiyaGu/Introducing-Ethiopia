@@ -165,7 +165,8 @@ $(function() {
         event.preventDefault();
     });
 });
-	
-	 $("#intro-name").css("height",$(window).height());
 }(window.jQuery, window, document));
   // The global jQuery object is passed as a parameter
+ $(".home-section").css("height",$(window).height());
+$("#intro-name").css("height",$(window).height()-125+"px");
+$("#container-row").css("paddingTop",($(window).height()/2)-70+"px"); 

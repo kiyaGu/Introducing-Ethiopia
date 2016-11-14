@@ -631,7 +631,7 @@ hr{
 	padding-bottom: 5px !important;	
 }
 #introduction{	
-	padding-top: 20px;	
+	padding-top: 90px;	
 }
 #profile-pic{
 	margin-top: 35px;
@@ -1021,17 +1021,21 @@ hr{
 	width: auto;
 	padding:0;		
 }
+
 #intro-name{	
-	height: 50%;	
+	box-sizing: border-box;
 }
+
 #typed strong{
 	font-weight:800;
 	font-size: 24px;
 }	
+/*
 #move-down{
-	margin-top: 100px !important;
+	margin-top: 10px !important;
 }	
-/* === about-me section layout === */
+*/
+/* === about-me section layout === 
 #about-me{
 	padding-bottom: 110px;
 }	
