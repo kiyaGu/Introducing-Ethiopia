@@ -202,6 +202,6 @@ $("#intro-name").css("height",$(window).height()-130+"px");
 else {
    $(".home-section").css("height",$(window).height());
 	$("#intro-name").css("height",$(window).height()-130+"px");
-   $(".about-me-section").css("height",$(window).height());
+//   $(".about-me-section").css("height",$(window).height());
 }
  
