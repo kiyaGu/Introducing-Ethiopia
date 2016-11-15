@@ -194,7 +194,7 @@ $(function() {
 
 if ( $(window).height() > 568) {      
   $(".home-section").css("height",$(window).height());
- $(".about-me-section").css("height",$(window).height());
+// $(".about-me-section").css("height",$(window).height());
 $(".portfolio-section").css("height",$(window).height());
 $("#intro-name").css("height",$(window).height()-130+"px");
 //$("#container-row").css("paddingTop",($(window).height()/2)-70+"px"); 
@@ -202,6 +202,6 @@ $("#intro-name").css("height",$(window).height()-130+"px");
 else {
    $(".home-section").css("height",$(window).height());
 	$("#intro-name").css("height",$(window).height()-130+"px");
-   
+   $(".about-me-section").css("height",$(window).height());
 }
  
