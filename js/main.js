@@ -5,7 +5,7 @@
 // Listen for the jQuery ready event on the document
 	$("#intro-name").css("height",$(window).height()-130+"px");
   $(".home-section").css("height",$(window).height());
- $(".about-me-section").css("height",$(window).height());
+// $(".about-me-section").css("height",$(window).height());
 //$(".portfolio-section").css("height",$(window).height());
 
 //$("#container-row").css("paddingTop",($(window).height()/2)-70+"px"); 
