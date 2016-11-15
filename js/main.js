@@ -123,8 +123,15 @@ $(function() {
 });
 window.addEventListener('scroll', function(){
   var place = document.body.scrollTop;
-  var animateOn = document.getElementById('animate-progress-bar').offsetTop;
-	if(place > animateOn){
+  //var animateOn = document.getElementById('animate-progress-bar').offsetTop;
+	
+	function log(txt) {
+  console.log(txt );
+}
+var eTop = $('#animate-progress-bar').offset().top; //get the offset top of the element
+var animateOn = eTop - $(window).scrollTop();
+//start the skills progress bar to animate when the user scrolls to #animate-progress-bar
+	if(animateOn < 89 ){
      	$(".pr1,.pr2,.pr4,.pr5,.pr6").animate({
     	width: "80%"
 	});
