@@ -475,8 +475,9 @@ body{
     margin-top: 50px;
     font-family: 'Raleway', Helvetica, sans-serif;
     font-size: 16px;
-    background: url(https://res.cloudinary.com/fcc-project/image/upload/v1478879466/tile_bfr3wz.jpg) top left repeat;
+    background: url("https://www.dropbox.com/s/lzf61jwzkoa6ysi/generic-bg.jpg?dl=1") 100% 0 repeat fixed;
 	 -webkit-font-smoothing: antialiased;
+	background-size: cover;
 }
 
 /* === GLOBAL === */
@@ -484,11 +485,11 @@ section{
 	margin: 20px 0;		
 }
 section div.container{
-	background: url(https://res.cloudinary.com/fcc-project/image/upload/v1478883465/dark-bg_cr9ppm.jpg);
+	background: url("https://www.dropbox.com/s/artrugelj5dnvlj/dark-bg.jpg?dl=1");		
 	padding: 20px;	
 	margin: 0 auto;
 	opacity: 0.9;
-	color:white;
+	color:cornsilk;
 }
 .row{
 	margin-top: 0px !important;
@@ -559,7 +560,7 @@ button.btn:focus{
     -ms-border-radius:50px;
     -o-border-radius:50px;
     border-radius:50px;
-    color:  #d9dee9;
+    color:cornsilk;
 	border: 1px solid #fec951;
 	position: relative;
 }
@@ -595,9 +596,16 @@ hr{
 }
 /* === navigation section layout === */
 .navbar{
-	background: url("https://res.cloudinary.com/fcc-project/image/upload/v1478954038/code-938776_xtcaps.jpg") no-repeat !important;
+	background: url("https://www.dropbox.com/s/7yzw111fl4tp55t/code-938776.jpg?dl=1") no-repeat !important;
 	background-size: cover;	
+
 }
+.navbar-collapse ul > li a{
+	color:cornsilk !important;
+}
+
+
+	
 .navbar-collapse ul > li.active a{
 	color: #fec951 !important;
 }
@@ -617,7 +625,7 @@ hr{
 }
 /* === home section layout === */
 .home-section{
-	background: url(https://res.cloudinary.com/fcc-project/image/upload/v1478880770/monitor-933392_1920_zvdisa.jpg) 50% 0 repeat fixed; 
+	background: url(https://www.dropbox.com/s/abkryjuv0sd6udg/home.jpg?dl=1) 50% 0 repeat fixed; 
 	background-size: cover;
 	height: 620px; 
  	margin: 0 auto; 
@@ -625,6 +633,7 @@ hr{
   	max-width: 1920px; 
   	position: relative;
 	padding-top:20px;
+	
 }
 #home div.container{
 	margin-top: 5px !important;
@@ -670,7 +679,8 @@ hr{
 }
 #typed strong{
 		font-weight:800;
-		font-size: 54px;	  
+		font-size: 54px;
+		color:#d9dee9;
 }
 /*--===end of typed.js style====---*/
 .hire-me{
@@ -689,15 +699,16 @@ hr{
 	border-radius:80%;
 	background: transparent;
 	border: 1px solid #fec951;
+	color:cornsilk;
 }
 #move-down button:hover{
 	background: #79b044;
     border: none;
-	color: black;	
+	
 }
 /* === about-me section layout === */
 .about-me-section{
-	background: url(https://res.cloudinary.com/fcc-project/image/upload/v1478954046/laptop-926775_ue3mi0.jpg) 50% 0 repeat fixed; 
+	background: url(https://www.dropbox.com/s/3joi07c7hhs1v56/about.jpg?dl=1) 50% 0 repeat fixed; 
 	background-size: cover;	
     min-height: 720px; 
  	margin: 0 auto; 
@@ -719,7 +730,7 @@ hr{
 }
 /* === resume section layout === */
 .resume-section{
-	background: url(https://res.cloudinary.com/fcc-project/image/upload/v1478954038/code-938776_xtcaps.jpg) 50% 0 repeat fixed; 
+	background: url(https://www.dropbox.com/s/4zyz444ipczi50z/resume.jpg?dl=1) 50% 0 repeat fixed; 
 	background-size: cover;
  	margin: 0 auto; 
   	width: 100%; 
@@ -959,8 +970,7 @@ button.slick-next.slick-arrow,button.slick-prev.slick-arrow  {
 }
 /* === portfolio section layout === */
 .portfolio-section{
-/*	background: url(https://res.cloudinary.com/fcc-project/image/upload/v1478880770/monitor-933392_1920_zvdisa.jpg) 50% 0 */
-	background: url(https://res.cloudinary.com/fcc-project/image/upload/v1479158857/desktop_pz6elp.jpg) 50% 0
+	background: url(https://www.dropbox.com/s/9w44tmz4v5aqim8/portfolio.jpg?dl=1) 50% 0
     repeat fixed;
 	background-size: cover;
  	margin: 0 auto; 
@@ -977,7 +987,8 @@ button.slick-next.slick-arrow,button.slick-prev.slick-arrow  {
 }
 /* === contact-me/footer section layout === */
 .contact-me-section{
-	background: url(https://res.cloudinary.com/fcc-project/image/upload/v1478954053/at-64056_fyocbs.jpg) 50% 0 repeat fixed; min-height: 720px; 
+	background: url(https://www.dropbox.com/s/4cif10lq79syt3p/at-64056.jpg?dl=1) 50% 0 repeat fixed; 
+	min-height: 720px; 
 	background-size: cover;	 
  	margin: 0 auto; 
   	width: 100%; 
@@ -1000,7 +1011,7 @@ button.slick-next.slick-arrow,button.slick-prev.slick-arrow  {
 	margin-top: 5px !important;
 }
 footer{
-  	background: url("https://res.cloudinary.com/fcc-project/image/upload/v1478954038/code-938776_xtcaps.jpg") no-repeat !important;
+  	background: url(https://www.dropbox.com/s/7yzw111fl4tp55t/code-938776.jpg?dl=1) no-repeat !important;
 	background-size: cover;
     color:#fec85d;
     padding:20px 0 10px 10px;
@@ -1010,7 +1021,7 @@ footer p{
     margin:0;    
 }
 footer a:link, footer a:visited{
-    color: white;
+    color:cornsilk;
 }
 footer a:hover{
     color: #dd5638;
