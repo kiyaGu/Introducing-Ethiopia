@@ -132,24 +132,22 @@ var eTop = $('#animate-progress-bar').offset().top; //get the offset top of the 
 var animateOn = eTop - $(window).scrollTop();
 //start the skills progress bar to animate when the user scrolls to #animate-progress-bar
 	if(animateOn < 89 ){
-     	$(".pr1,.pr2,.pr4,.pr5,.pr6").animate({
-    	width: "80%"
-	});
-		$(".pr3").animate({
+     	$(".pr1,.pr2,.pr4,.pr6").animate({
     	width: "90%"
+	});
+		$(".pr3,.pr5").animate({
+    	width: "80%"
 		});
 		$(".pr8").animate({
     	width: "50%"
 	});
-		$(".pr7").animate({
-    	width: "40%"
-	});
-    	$(".pr10").animate({
-    	width: "45%"
-	});
-    	$(".pr9,.pr11").animate({
+		$(".pr7,.pr9,.pr11").animate({
     	width: "60%"
 	});
+    	$(".pr10").animate({
+    	width: "40%"
+	});
+    	
 		$('.progress-bar-text').removeClass('progress-bar-text-display');
     	this.removeEventListener('scroll', arguments.callee, false);
   }	
