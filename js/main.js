@@ -190,13 +190,8 @@ $(function() {
         event.preventDefault();
     });
 });
-	
 
-	
-	
-}(window.jQuery, window, document));
-  // The global jQuery object is passed as a parameter
-
+//setting the pages height dynamically
 if ( $(window).height() > 568) {      
   $(".home-section").css("height",$(window).height());
  $(".about-me-section").css("height",$(window).height());
@@ -206,7 +201,21 @@ $("#intro-name").css("height",$(window).height()-130+"px");
 } 
 else {
    $(".home-section").css("height",$(window).height());
-	$("#intro-name").css("height",$(window).height()-130+"px");
+  $("#intro-name").css("height",$(window).height()-130+"px");
 //   $(".about-me-section").css("height",$(window).height()+50+"px");
-}
+}	
+
+$("#send-button").on('click',function(e){
+  var name=$("#name").val();
+  var email=$("#email").val();
+  var subject=$("#subject").val();
+  var message=$("#message").val();
+  
+  window.open('mailto:kiya.gurmesa@gmail.com?subject='+subject+'&body='+message);
+  e.preventDefault();
+})	
+	
+}(window.jQuery, window, document));
+  // The global jQuery object is passed as a parameter
+
  
