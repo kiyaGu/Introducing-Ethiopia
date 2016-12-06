@@ -1161,12 +1161,12 @@ h2{
 #profile-pic{
 	margin-top: 5px !important;
 	padding-right: 5px;
-	margin-bottom: 20px !important;
+	margin-bottom: 10px !important;
 }
 #profile-pic img{
 	border-radius: 50%;
 	height: 150px;
-	width: 50%;
+	width: 40%;
 	padding:0;		
 }
 #typed strong{
