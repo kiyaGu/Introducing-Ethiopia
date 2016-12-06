@@ -971,7 +971,7 @@ button.slick-next.slick-arrow,button.slick-prev.slick-arrow  {
 /* === portfolio section layout === */
 .portfolio-section{
 	background: url(https://www.dropbox.com/s/41b4lx3c128xqyd/code-944499.jpg?dl=1) 100% 0
-    no-repeat fixed;
+    repeat fixed;
 	background-size: cover;
  	margin: 0 auto; 
   	width: 100%; 
