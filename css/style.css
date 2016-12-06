@@ -644,13 +644,13 @@ hr{
 	padding-top: 150px;	
 }
 #profile-pic{
-	margin-top: 35px;
+	margin-top: 85px;
 	padding-right: 5px;
-	margin-bottom: 230px !important;
+	margin-bottom: 200px !important;
 }
 #profile-pic img{
 	border-radius: 50%;
-	height: auto;
+	height: 50%;
 	width: 85%;
 }
 /*==================== typed.js===============*/
@@ -730,8 +730,8 @@ hr{
 }
 /* === resume section layout === */
 .resume-section{
-	background: url(https://www.dropbox.com/s/7yzw111fl4tp55t/code-938776.jpg?dl=1) 50% 0 repeat fixed; 
-	background-size: cover;
+/*	background: url(https://www.dropbox.com/s/7yzw111fl4tp55t/code-938776.jpg?dl=1) 50% 0 repeat fixed; 
+*/	background-size: cover;
  	margin: 0 auto; 
   	width: 100%; 
   	max-width: 1920px; 
@@ -854,7 +854,7 @@ button.slick-next.slick-arrow,button.slick-prev.slick-arrow  {
     content: " ";
     width: 1px;
     background: 1px #fec951;
-    height: 90%;
+    height: 80%;
     position: absolute;
     top: 3em;
     left: 5em;
@@ -970,8 +970,8 @@ button.slick-next.slick-arrow,button.slick-prev.slick-arrow  {
 }
 /* === portfolio section layout === */
 .portfolio-section{
-	background: url(https://www.dropbox.com/s/y2jjncu46qdhi3d/neo-urban-1734495.jpg?dl=1) 50% 0
-    repeat fixed;
+	background: url(https://www.dropbox.com/s/41b4lx3c128xqyd/code-944499.jpg?dl=1) 100% 0
+    no-repeat fixed;
 	background-size: cover;
  	margin: 0 auto; 
   	width: 100%; 
@@ -979,7 +979,7 @@ button.slick-next.slick-arrow,button.slick-prev.slick-arrow  {
   	position: relative; 
 }
 .portfolio-section div.container {
-	opacity: 0.95;
+	opacity: 1;
 	margin-top: 40px;
 }
 .portfolio-section h2{
@@ -987,8 +987,8 @@ button.slick-next.slick-arrow,button.slick-prev.slick-arrow  {
 }
 /* === contact-me/footer section layout === */
 .contact-me-section{
-	background: url(https://www.dropbox.com/s/4cif10lq79syt3p/at-64056.jpg?dl=1) 50% 0 repeat fixed; 
-	min-height: 720px; 
+/*	background: url(https://www.dropbox.com/s/4cif10lq79syt3p/at-64056.jpg?dl=1) 50% 0 repeat fixed; 
+*/	min-height: 720px; 
 	background-size: cover;	 
  	margin: 0 auto; 
   	width: 100%; 
