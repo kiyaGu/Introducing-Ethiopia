@@ -3,6 +3,8 @@
 (function($, window, document) {
 // The $ is now locally scoped 
 // Listen for the jQuery ready event on the document
+//for setting the time for alertify js for displying error messages
+    alertify.set({ delay: 10000 });
 $(function() {
 		// The DOM is ready!
 	$('.slider-portfolio-pic').slick({
@@ -157,7 +159,6 @@ $(function() {
 	// Cache the Window object
 	var $window = $(window);	
 	// Parallax Backgrounds
-	// Tutorial: http://code.tutsplus.com/tutorials/a-simple-parallax-scrolling-technique--net-27641
 	$('section[data-type="background"]').each(function(){
        var $bgobj = $(this); // assigning the object
         $(window).scroll(function(){
@@ -171,7 +172,7 @@ $(function() {
                          });
     });	
 });
-    // $(".home-section").css("height",$(window).height());
+    
 	//jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
@@ -192,17 +193,35 @@ $(function() {
 });
 
 //setting the pages height dynamically
-if ( $(window).height() > 568) {      
+if ( $(window).height() > 640) {      
   $(".home-section").css("height",$(window).height());
  $(".about-me-section").css("height",$(window).height());
 $(".portfolio-section").css("height",$(window).height());
 $("#intro-name").css("height",$(window).height()-130+"px");
-//$("#container-row").css("paddingTop",($(window).height()/2)-70+"px"); 
+//$("#container-row").css("paddingTop",($(window).height()/2)-70+"px");
+    
 } 
+    else if ( $(window).height() > 700) {      
+  $(".home-section").css("height",$(window).height());
+ $(".about-me-section").css("height",$(window).height());
+$(".portfolio-section").css("height",$(window).height());
+$("#intro-name").css("height",$(window).height()-140+"px");
+//$("#container-row").css("paddingTop",($(window).height()/2)-70+"px");
+    
+} 
+        else if ( $(window).height() < 800) {      
+  $(".home-section").css("height",$(window).height());
+ $(".about-me-section").css("height",$(window).height());
+$(".portfolio-section").css("height",$(window).height());
+$("#intro-name").css("height",$(window).height()-130+"px");
+//$("#container-row").css("paddingTop",($(window).height()/2)-70+"px");
+    
+}
 else {
    $(".home-section").css("height",$(window).height());
-  $("#intro-name").css("height",$(window).height()-130+"px");
+  $("#intro-name").css("height",$(window).height()+"px");
 //   $(".about-me-section").css("height",$(window).height()+50+"px");
+
 }	
 
 $("#send-button").on('click',function(e){
@@ -214,7 +233,141 @@ $("#send-button").on('click',function(e){
   window.open('mailto:kiya.gurmesa@gmail.com?subject='+subject+'&body='+message);
   e.preventDefault();
 })	
-	
+//validating the form entry for the contact us section
+//to validate the email address
+var regexp=/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/; 
+// to hold the error messages
+ var errM=[];
+//errors that will be displayed according to the error
+errM[1]="Please fill your <u>Name</u>";
+errM[2]="Please fill Your <u>Email</u> Address";
+errM[3]="Please fill the <u>subject</u> of your message";
+errM[4]="Please fill the <u>message</u> you want to send to me";
+ //==========================ajax request===================================//
+function Ajax_request(){
+   if (window.XMLHttpRequest) { // Mozilla, Safari, ...
+      xmlhttp = new XMLHttpRequest();
+    } 
+    else if (window.ActiveXObject) { // IE
+      try {  
+        xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+           } 
+      catch (e) {
+        try {
+          xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            } 
+        catch (e) {}
+      }//catch
+    }//else if
+
+    if (!xmlhttp) {
+      alertify.error('Giving up :( Cannot create an XMLHTTP instance');
+      return false;
+    }
+     return xmlhttp;
+       } 
+    
+    //=========================send message========================================//
+  
+  
+  function send_message(event) {
+    var name=$('#name').val();
+    var email1=$('#email').val();
+    var subject=$('#subject').val();
+    var message=$('#message').val();   
+    if (name==='')
+     { 
+         
+         alertify.error(errM[1]);
+        $('#name').focus();
+        event.preventDefault();
+        event.stopPropagation();
+        return;
+    } 
+    else if (email1==='')
+     {      
+          
+         alertify.error(errM[2]);
+        $('#email1').focus();
+        event.preventDefault();
+        event.stopPropagation();
+        return;
+    } 
+    else if (!(regexp.test(email1)))
+     {      
+            
+        alertify.error("<h5><u>SORRY</u>:</h5> the Email address <u>"+email1+"</u> is not a valid email address");
+        $('#email1').focus();
+        event.preventDefault();
+        event.stopPropagation();
+        return;
+    }
+     else if (subject==='')
+     {      
+            
+        alertify.error(errM[3]);
+        $('#subject').focus();
+        event.preventDefault();
+        event.stopPropagation();
+        return;
+    } 
+     else if (message==='')
+     {      
+            
+        alertify.error(errM[4]);
+        $('#message').focus();
+        event.preventDefault();
+        event.stopPropagation();
+        return;
+    } 
+     
+      else {
+       xmlhttp=Ajax_request();
+       var resultP=null;
+       var resP;
+          respP= function(callback,resP){
+             if(resultP === "failed"){
+                    alertify.success("<strong><u>ERROR</u>:</strong>  <b>Sorry, it seems your message can not be sent currently!!!!</b>");
+                  }
+          else if(resultP === "success"){
+             alertify.success("<strong><u>success</u>:</strong>  <b>Thank you, Very Much for contacting us we will respond to you as soon as possible!!!!</b>");
+              $('#message_form').trigger("reset");             
+             }
+
+            else{
+              
+              alertify.error("<blockquote><u>ERROR</u>: <h5>"+resultP+"</h5></blockquote>");
+                     
+                 } 
+               }
+
+
+
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+              resP=xmlhttp.responseText;              
+              resultP=JSON.parse(xmlhttp.responseText);
+              respP(resultP,resP);
+               
+            }
+        }
+        xmlhttp.open("POST","../sendMessage.php?",true);
+        xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+       //================prepare=====================//
+       var data=$('#send_message').serialize();
+       xmlhttp.send(data);
+       event.preventDefault();
+        event.stopPropagation();
+        }
+       }
+    
+    
+    
+    
+    
+    
+}   
+
 }(window.jQuery, window, document));
   // The global jQuery object is passed as a parameter
 

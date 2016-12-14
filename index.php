@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/alertify.core.css">
+    <link rel="stylesheet" href="css/alertify.default.css">
   <link rel="stylesheet" href="css/style.css">
      
     
@@ -87,7 +89,7 @@
 				<div class="col-sm-offset-2 col-sm-7 col-xs-12 col-sm-pull-3 text-center" id="introduction" >
 					<div id="typed-strings">					
 						<p class="text-center lead sr-only"><strong>HEY THERE! I'M <span class="text-success">KIYA</span></strong><br><span id="intro-break"><br></span>
-						I'M A UK BASED WEB DEVELOPER CREATING AWESOME AND EFFECTIVE VISUAL IDENTITIES FOR COMPANIES OF ALL SIZES AND ENTREPRENEURS.</p>
+						I'M A UK BASED WEB DEVELOPER WHO IS CAPABLE OF CREATING AWESOME AND EFFECTIVE VISUAL IDENTITIES FOR COMPANIES OF ALL SIZES AND ENTREPRENEURS.</p>
 					</div>
 					<span id="typed"></span>		
 					<div class="row">
@@ -538,7 +540,7 @@
 					</h2>
 				</div>
 				<div class="col-sm-4">					
-					<form action="" class="text-center">
+					<form action="" class="text-center" id="send_message">
 						<div class="form-group">
 							<label for="name">Name: </label>
 							<input type="text" id="name" class="form-control"  placeholder="Your Name" required>
@@ -555,7 +557,7 @@
 							<label for="message">Message: </label>
 							<textarea rows="10" cols="10" class="form-control"  placeholder="Your Message" id="message" required></textarea>
 						</div>						
-						<button class="btn btn-warning btn-block" type="submit" id="send-button">
+						<button class="btn btn-warning btn-block" type="submit" id="send-button" onclick="send_message(event);">
 							Send Message <i class="fa fa-send"></i>
 						</button>						
 					</form>
@@ -575,7 +577,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-offset-3 col-xs-6">
-          			<p class="text-center"><small>Created by: <a href="#" target="_blank"><em>Kiya G</em></a> &copy 2016</small></p>
+          			<p class="text-center"><small>Created by: <a href="#" target="_blank"><em>Kiya Gur</em></a> &copy 2016</small></p>
 				</div>
 			</div>
 		</div>
@@ -590,6 +592,7 @@
      	<script src="js/scrolling-nav.js"></script> 
    		<script type="text/javascript" src="js/slick.min.js"></script>
     	<script type="text/javascript" src="js/typed.js"></script>
+    	<script type="text/javascript" src="js/alertify.min.js"></script>
      	<script src="js/main.js"></script>
      	 	    
 </body>
