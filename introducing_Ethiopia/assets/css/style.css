@@ -465,8 +465,6 @@ template {
 /*=============End normalize==============*/
 
 
-
-
 /* ==== GENERAL ==== */
 html, body {
   height: 100%;
@@ -588,7 +586,7 @@ nav > ul > li:first-of-type{
   flex: 2;
 }
 nav > ul > li:nth-of-type(2){
-  color: green;
+  color: #4cb845;
 }
 nav > ul > li:nth-of-type(3){
   color: yellow;
@@ -1379,9 +1377,6 @@ section#culture_and_tradition article#culture_main aside div#sample_music_videos
   }
 }
 @media screen and (max-width:760px) {
-  nav > ul > li:nth-of-type(2){
-    color: #4cb845; /* to make it more visible - light green*/
-  }
   section #main h1 {
         font-size: 5em;
         margin-bottom: .4em;
