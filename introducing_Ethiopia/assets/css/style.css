@@ -1458,9 +1458,9 @@ section#culture_and_tradition article#culture_main aside div#sample_music_videos
       flex: 3 0 auto;
       margin-left: 0px;
     }
-/*}
+}
 
-@media screen and (max-width:425px) {*/
+@media screen and (max-width:425px) {
 nav a#mobile_menu {
         left: auto;
         right: 40px;
