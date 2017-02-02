@@ -1583,7 +1583,7 @@ section#about_main article#location #location_content #anthem_audio_file{
   background-image: url(../images/dark-bg.jpg);
   position: relative;
   margin: 0;
-  height: 80px;
+  height: 60px;
   padding-bottom: 10px;
   border-radius: .3rem;
 }
@@ -1735,6 +1735,9 @@ section#culture_and_tradition article#culture_main aside#ethiopian_music{
   padding-left: .8em;
   padding-right: 0;
 }
+section#culture_and_tradition article#culture_main aside#ethiopian_music{
+  padding-right: .3em;
+}
 section#culture_and_tradition article#culture_main aside#ethiopian_cuisine{
   flex-direction: column;
   padding-left: .9em;
@@ -1776,7 +1779,7 @@ section#culture_and_tradition article#culture_main aside#ethiopian_cuisine > div
   padding-right: .8em;
 }
 section#culture_and_tradition article#culture_main aside > div#sample_music_videos {
-  padding-right: .5em;
+  padding-right: 0;
 }
 section#culture_and_tradition article#culture_main aside > div#sample_music_videos div{
   padding-top: 0.5em;
