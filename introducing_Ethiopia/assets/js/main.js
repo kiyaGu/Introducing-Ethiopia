@@ -1,14 +1,15 @@
 $(document).ready(function(){
-  var dg_H = $(window).height();
-  var dg_W = $(window).width();
+  var dg_H = $(window).height(); // to get the height of the current devicies browser window
+  var dg_W = $(window).width();  // to get the width of the current devicies browser window
+  //make the background hieght and width of the index page to the values identified above
   $('#background').css({'height':dg_H,'width':dg_W});
-  //$('#main').css("height",($(".page").height() - 210 + "px")); /* 124 = 68 (nav height) + 56(footerheight)*/
-function anim() {
+  // this function will change the background of the index page with different images
+  function anim() {
            $("#background img.backgroundImg").first().appendTo('#background').fadeOut(1500);
            $("#background img.backgroundImg").first().fadeIn(1500);
            setTimeout(anim, 3000);
   }
-anim();
+  anim();
 //slide animation for dalol depression
 var semenImgArray = ["semen_mountails.jpg","semen_mountains_1.jpg","semen_mountains_2.jpg","semen_mountains_3.jpg",
 "semen_mountains_4.jpg","semen_mountains_5.jpg","semen_mountains_6.jpg","semen_mountains_7.jpg"];
