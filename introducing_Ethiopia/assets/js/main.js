@@ -104,16 +104,14 @@ $('nav a#mobile_menu').on('click',function(){
 if($('nav').height() < 60){
    $('nav').animate({"height":"200px"},550,"linear");
    $('nav > ul >li:nth-child(n+2)').show();
-   $('nav > ul >li').css("width","100%");
-   $('nav >ul >li').css("border-bottom","1px solid grey");
+  //  $('nav > ul >li').css("width","100%");
+  //  $('nav >ul >li').css("border-bottom","1px solid grey");
 }else{
    $('nav').animate({"height":x},550,"linear",function(){
-   $('nav > ul > li:nth-child(n+2)').hide();
+  //  $('nav > ul > li:nth-child(n+2)').hide();
    $('nav > ul > li:first-of-type').css("border-bottom","0px");
   });
-
 }
-
 });
 //slick natural attraction page wildlife picture slide
 $('.wildlife_thumbnail').slick({
