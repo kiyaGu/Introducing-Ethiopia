@@ -633,7 +633,7 @@ nav >ul >li >ul{
   left: 5px;
   padding: 10px;
 }
-nav>ul>li>a[aria-haspopup="false"]::after {
+nav>ul>li>a[aria-haspopup="true"]::after {
   content: "";
   display: block;
   width: 0px;
@@ -1377,7 +1377,7 @@ section#culture_and_tradition article#culture_main aside div#sample_music_videos
   }
 }
 @media screen and (max-width:825px) {
-  nav>ul>li>a[aria-haspopup="false"]::after {
+  nav>ul>li>a[aria-haspopup="true"]::after {
     top: 30px;
   }
 }
@@ -1443,7 +1443,7 @@ section#culture_and_tradition article#culture_main aside div#sample_music_videos
       padding-top: 1px;
       padding-bottom: 3px;
     }
-  nav>ul>li>a[aria-haspopup="false"]::after {
+  nav>ul>li>a[aria-haspopup="true"]::after {
       border-bottom: 6px solid transparent;
       border-top: 6px solid transparent;
       border-left: 6px solid #fff;
