@@ -464,7 +464,7 @@ template {
 
 /*=============End normalize==============*/
 
-
+/*/\/\/\/\/\_________Custom Styling_________/\/\/\/\/\/\/\/\/\ */
 /* ==== GENERAL ==== */
 html, body {
   height: 100%;
@@ -503,23 +503,18 @@ hr{
   margin: 0;
 }
 span.xs-screen-hide{
-  display: none; /*Hides the content on small screen sizes*/
+  display: none; /*used to Hide the content on small screen sizes*/
 }
 .page{
   flex: 1 0 auto;
-  /*max-width: 1200px;*/
-  /*margin: 0 auto;*/
-  /*background-image: url("../images/Blue_Nile_Falls_02.jpg");*/
-  /*background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 0;*/
-  /*background-color:black;*/
-  display: flex;
-  flex-direction: column;
-
+  display: flex; /* set the class page to use flex box conatiner for its child elements */
+  flex-direction: column; /* The main axis of the flex-box will be vertical */
 }
 #background{
-  flex: 1 0 auto;
+  flex: 1 0 auto; /* it is a short representaion of
+                    flex-grow - if there is free space grow to accomodate the size
+                    flex-shrink  - if there is no free space don't shrink
+                    and flex-basis - specifies the flex basis which is the initial main size of a flex item. */
   position:fixed;
   z-index:-1;
   top:0;
@@ -527,7 +522,6 @@ span.xs-screen-hide{
 }
 header{
   flex: 1 0 50px;
-  /*border-bottom: 1px solid  #74718f;*/
   display: flex;
 }
 nav{
@@ -539,7 +533,7 @@ nav, footer{
   position: relative;
   color: #e6e7e9;
 }
-nav:before,footer:after {
+nav:before,footer:after { /* to create a transpartent background in the nav and footer sections*/
     content: ' ';
     display: block;
     position: absolute;
@@ -631,7 +625,7 @@ nav >ul >li >ul{
   left: 5px;
   padding: 10px;
 }
-nav>ul>li>a[aria-haspopup="true"]::after {
+nav>ul>li>a[aria-haspopup="true"]::after { /* to create the arrow for the submenu */
   content: "";
   display: block;
   width: 0px;
@@ -676,7 +670,7 @@ nav a#mobile_menu {
     background-size: contain;
     position: absolute;
     top: 22px;
-    /* top and left properties are needed as made the position of the element absolute */
+    /* top and left properties are needed as the position of the element is made absolute */
     left: 50%;
     /* will center the element */
     margin-left: -16px;
@@ -720,7 +714,7 @@ section #main h2{
   letter-spacing: 5px;
 }
 section::after {
-  content: '\00a0'; /* &nbsp; */
+  content: '\00a0'; /* it is equivalent to &nbsp; - used in place the HTML as HTML can't be put in content  */
   display: block;
   visibility: hidden;
 }
@@ -1019,7 +1013,6 @@ section#culture_and_tradition article#culture_main aside#ethioian_clothing > div
   opacity:.3;
   border-radius: 5px;
 }
-
 section#culture_and_tradition article#culture_main aside > div:not(#ethio_music_into) > h3{
   margin-bottom: 0;
 }
@@ -1192,10 +1185,10 @@ section#culture_and_tradition article#culture_main aside div#sample_music_videos
   text-decoration: underline;
   text-shadow: .04em .01em #000;
 }
-.natural_thumbnail{
+#natural_attraction section#natural_landscape div#landscape_content article div.natural_thumbnail{
   position: relative;
 }
-.natural_thumbnail::after{
+#natural_attraction section#natural_landscape div#landscape_content article div.natural_thumbnail::after{
   content: "";
   position: absolute;
   width: 65%;
@@ -1275,7 +1268,7 @@ section#culture_and_tradition article#culture_main aside div#sample_music_videos
 #natural_attraction section#natural_wild_life article#wildlife_content div.wildlife_description{
   margin: 0 4em;
 }
-/*====================slick===============*/
+/*====================slick.js===============*/
 .slider {
   width: 65%;
   margin: 40px auto;
@@ -1861,8 +1854,5 @@ section#culture_and_tradition article#culture_main aside div#sample_music_videos
     padding-left: .9em;
   }
 }
-
-
-
 
 /*=========end of Mobile query============================*/
