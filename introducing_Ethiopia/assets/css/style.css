@@ -1188,7 +1188,7 @@ section#culture_and_tradition article#culture_main aside div#sample_music_videos
 #natural_attraction section#natural_landscape div#landscape_content article div.natural_thumbnail{
   position: relative;
 }
-#natural_attraction section#natural_landscape div#landscape_content article div.natural_thumbnail::after{
+.natural_thumbnail::after{
   content: "";
   position: absolute;
   width: 65%;
@@ -1731,7 +1731,7 @@ section#culture_and_tradition article#culture_main aside div#sample_music_videos
   #natural_attraction section .heading h2 + p{
     padding-left: .6em;
   }
-  #natural_attraction section#natural_landscape div#landscape_content article div.natural_thumbnail::after{
+  .natural_thumbnail::after{
     width: 95%;
     left: 2.5%;
   }
