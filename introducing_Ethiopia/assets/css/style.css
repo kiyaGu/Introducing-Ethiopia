@@ -1423,6 +1423,7 @@ section#culture_and_tradition article#culture_main aside div#sample_music_videos
   nav > ul > li:first-of-type a{
    padding-left: 25px ;
    padding-right: 25px;
+   padding-top: 27px;
   }
   footer ul{
    align-content: flex-start;
@@ -1715,7 +1716,6 @@ section#culture_and_tradition article#culture_main aside div#sample_music_videos
   #natural_attraction header,
   #natural_attraction section{
     flex-wrap: nowrap;
-
   }
   #natural_attraction section{
     margin: 0em;
