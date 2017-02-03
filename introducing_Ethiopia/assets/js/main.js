@@ -102,7 +102,7 @@ $('nav a#mobile_menu').on('click',function(){
 
 
 if($('nav').height() < 60){
-   $('nav').animate({"height":"2000px"},550);
+   $('nav').animate({"height":"200px"},550);
    $('nav > ul >li:nth-child(n+2)').show();
    $('nav > ul >li').css("width","100%");
    $('nav > ul > li').css("border-bottom","1px solid grey");
