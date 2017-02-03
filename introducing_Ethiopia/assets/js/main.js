@@ -99,17 +99,16 @@ setInterval(eartale_slide,5000);
 // navigation menu for mobile devices
 x = $('nav').height();
 $('nav a#mobile_menu').on('click',function(){
-
-
 if($('nav').height() < 60){
-   $('nav').animate({"height":"200px"},550);
-   $('nav > ul >li:nth-child(n+2)').show();
-   $('nav > ul >li').css("width","100%");
-   $('nav > ul > li').css("border-bottom","1px solid grey");
+  $('nav').animate({"height":"200px"},550,"linear");
+  $('nav ul li:nth-child(n+2)').show();
+  $('nav >ul >li:not(li:first-of-type)').css("width","98%");
+  $('nav >ul >li:first-of-type').css("width","78%");
+  $('nav >ul >li').css("border-bottom","1px solid grey");
 }else{
-   $('nav').animate({"height":x},550,function(){
-   $('nav > ul > li:nth-child(n+2)').hide();
-   $('nav > ul > li:first-of-type').css("border-bottom","0px");
+  $('nav').animate({"height":x},550,"linear",function(){
+    $('nav ul li:nth-child(n+2)').hide();
+    $('nav ul li:first-of-type').css("border-bottom","0px");
   });
 }
 });
