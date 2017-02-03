@@ -15,8 +15,8 @@ $(document).ready(function(){
                         "semen_mountains_2.jpg","semen_mountains_3.jpg",
                        "semen_mountains_4.jpg","semen_mountains_5.jpg",
                        "semen_mountains_6.jpg","semen_mountains_7.jpg"];
-var i = 0,j=0, k=0; // used to accesses the array elements for the comming three functions
-function semen_slide() {
+  var i = 0,j=0, k=0; // used to accesses the array elements for the comming three functions
+  function semen_slide() {
     if (i < semenImgArray.length) {
       //fadeOut the current picture and when done as a callback function fadeIn a new image
       $("#Semen_mountains .natural_thumbnail img").fadeOut(1000,"swing",
@@ -33,8 +33,8 @@ function semen_slide() {
         $("#Semen_mountains .natural_thumbnail img").attr("src","assets/images/"+semenImgArray[i]).fadeIn(3000,"linear");
       });
     }
-}
-setInterval(semen_slide,5000)
+ }
+ setInterval(semen_slide,5000);
 //slide animation for semen Mountains
 var dalolImgArray = ["dalol_1.jpg","dalol_2.jpg","dalol_3.jpg",
                      "dalol_4.jpg","dalol_5.jpg","dalol_6.jpeg",
@@ -55,6 +55,7 @@ function dalol_slide() {
         $("#dalol_depression .natural_thumbnail img").attr("src","assets/images/"+dalolImgArray[j]).fadeIn(3000,"linear");
       });
     }
+  }
 setInterval(dalol_slide,5000);
 
 //slide animation for semen Mountains depression
@@ -81,7 +82,6 @@ function cloth_slide() {
     }
 }
 setInterval(cloth_slide,5000);
-
 //slide animation for ethiopian people traditional cloth
 var eartaleImgArray = ["eartale_1.jpg","eartale_2.jpg","eartale_3.jpg",
                        "eartale_4.jpg","eartale_4.png","eartale_5.jpg",
