@@ -650,6 +650,10 @@ nav > ul > li:nth-child(n+2) > a:hover {
   background-position: bottom center;
   color: #fff;
 }
+nav >ul >li >ul >li {
+  list-style: none;
+  text-align: justify;
+  }
 nav > ul > li > ul > li > a:hover {
   color: #fec85d;
 }
@@ -1397,10 +1401,6 @@ section#culture_and_tradition article#culture_main aside div#sample_music_videos
     left: 100%;
     top:37%;
   }
-  nav >ul >li >ul >li {
-    list-style: none;
-    text-align: justify;
-    }
   footer ul{
     align-items: flex-start;
   }

@@ -34,7 +34,7 @@ $(document).ready(function(){
       });
     }
  }
- setInterval(semen_slide,5000);
+ setInterval(semen_slide,5000);//run the function after each 5s
 //slide animation for semen Mountains
 var dalolImgArray = ["dalol_1.jpg","dalol_2.jpg","dalol_3.jpg",
                      "dalol_4.jpg","dalol_5.jpg","dalol_6.jpeg",
